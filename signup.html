@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>SignUp</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="login.css">
+<link href="css/main.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <script src="js/bootstrap.min.js"></script>
+    
+</head>
+<body>
+
+<div class="signup" id="signUpForm">
+       
+            <div class="row">
+               <div id="signup_div" class="col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-4 form">
+                  <img id="loginimg" src="images/logo1.png">
+                <span id="loginhd">PROFIX</span>
+                    <h2>Sign up</h2><br>
+                    <div class="container">
+                      <div class="row">
+                        <label>Name</label><br>
+                        <input class="redinputline wdt" type="text" id="txtName"  class="col-xs-11 col-xs-offset-0 col-md-3 col-md-offset-0"/><br><br>
+                        <label>Contact No</label><br>
+                        <input class="redinputline wdt" type="number" id="txtPhone"  class="col-xs-11 col-xs-offset-0 col-md-3 col-md-offset-0"/><br><br>
+                        <label>Enrollment/RollNo</label><br>
+                        <input class="redinputline wdt" type="text" id="txtEnrollment"  class="col-xs-11 col-xs-offset-0 col-md-3 col-md-offset-0"/><br><br>
+                        <label>Email</label><br>
+                        <input class="redinputline wdt" type="email" id="txtEmail"  class="col-xs-11 col-xs-offset-0 col-md-3 col-md-offset-0"/><br><br>
+                        <label>Password</label><br>
+                        <input class="redinputline wdt" type="password" id="txtPassword"  class="col-xs-11 col-xs-offset-0 col-md-3 col-md-offset-0"/><br><br><br>
+                        <button id="signupbtn" onclick="signUp()">Sign Up</button>
+                    </div>   
+                  </div>
+               </div>
+            </div>   
+      
+      
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "your apikey",
+    authDomain: "your authdomain",
+    databaseURL: "your database url",
+    projectId: "your projectid",
+    storageBucket: "your storage bucket",
+    messagingSenderId: "your message sender id"
+  };
+  firebase.initializeApp(config);
+</script>
+
+<script type="text/javascript" src="signup.js"></script>
+
+</body>
+</html>
